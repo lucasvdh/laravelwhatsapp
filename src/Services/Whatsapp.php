@@ -89,13 +89,10 @@ class Whatsapp
 	 */
 	public function connect(WhatsProt $connection, $password, Listener $listener)
 	{
-		$events = new MyEvents($prot);
-		; //You can also pass in your own array with a list of events to listen too instead.
-
 		//Now continue with your script.
 		$connection->connect();
-		$prot->loginWithPassword($password);
+		$connection->loginWithPassword($password);
 
-		return $prot;
+		return $connection;
 	}
 }
