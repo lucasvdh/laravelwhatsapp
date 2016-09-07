@@ -1,0 +1,76 @@
+kenteken {
+  overflow: hidden;
+  display: inline-block;
+  white-space: nowrap;
+  vertical-align: middle;
+
+  .table & {
+    margin: 0 10px;
+  }
+
+  img {
+    background-color: #2463A8;
+    display: inline-block;
+    width: 26px;
+    padding: 5px;
+    vertical-align: bottom;
+  }
+
+  span {
+    text-transform: uppercase;
+    background-color: #F5BD04;
+    font-family: 'Kenteken';
+    font-size: 24px;
+    padding: 3px 5px;
+    color: rgb(45, 44, 44);
+    display: inline-block;
+  }
+
+  .small {
+    img {
+      height: 31px;
+    }
+    span {
+      font-size: 18px;
+    }
+  }
+
+  .table & {
+    margin: 0;
+    span {
+      font-size: 14px;
+    }
+    img {
+      width: 18px;
+    }
+  }
+}
+
+.input-group.kenteken {
+
+  .input-group-addon {
+    background-color: #2463A8;
+    border: 0;
+    padding: 5px 10px;
+
+    img {
+      height: 24px;
+    }
+  }
+
+  input {
+    background-color: #F5BD04;
+    border: 0;
+    font-family: 'Kenteken';
+    color: rgb(45, 44, 44);
+  }
+
+  &.invalid {
+    border: solid 2px red;
+    border-radius: 4px;
+
+    input {
+      color: red;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+	"name": "lucasvdh/laravelwhatsapp",
+	"version": "5.0",
+	"license": "MIT",
+	"description": "A Laravel wrapper for 'whatsapp/chat-api'",
+	"keywords": ["laravel", "whatsapp"],
+	"homepage": "https://github.com/lucasvdh/laravelwhatsapp",
+	"authors": [{
+		"name": "Lucas van der Have",
+		"email": "lucasvanderhave@gmail.com",
+		"homepage": "http://lucasvdh.codes/",
+		"role": "Developer"
+	}],
+	"require": {
+		"php": ">=5.3.0",
+		"laravel/framework": "5.*",
+		"whatsapp/chat-api": "3.*"
+	},
+	"autoload": {
+		"psr-4": {
+			"Lucasvdh\\LaravelWhatsapp\\": "src/"
+		}
+	}
+}
