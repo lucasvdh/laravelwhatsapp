@@ -51,6 +51,9 @@ class Whatsapp
 
 		$registration_result = $registration->codeRegister($code);
 
+		// Convert to assoc array
+		$registration_result = json_decode(json_encode($registration_result), true);
+
 		if(!isset($registration_result['pw'])) {
 			throw new Exception('Registration was unsuccessful');
 		}
