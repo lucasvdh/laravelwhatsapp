@@ -55,20 +55,20 @@ class Whatsapp
 		$registration_result = json_decode(json_encode($registration_result), true);
 
 		if(!isset($registration_result['pw'])) {
-			throw new Exception('Registration was unsuccessful');
-		}
-
-		return $registration_result;
+		throw new Exception('Registration was unsuccessful');
 	}
 
-	/**
-	 * @param $username
-	 * @param bool $debug
-	 */
-	public function resetPassword($username, $debug = false)
-	{
-		// Create a new Registration instance
-		$registration = new Registration($username, $debug);
+return $registration_result;
+}
+
+/**
+ * @param $username
+ * @param bool $debug
+ */
+public function resetPassword($username, $debug = false)
+{
+	// Create a new Registration instance
+	$registration = new Registration($username, $debug);
 		$registration->checkCredentials();
 	}
 
