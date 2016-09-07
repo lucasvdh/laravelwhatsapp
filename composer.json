@@ -19,6 +19,10 @@
 	"autoload": {
 		"psr-4": {
 			"Lucasvdh\\LaravelWhatsapp\\": "src/"
-		}
+		},
+		"classmap": [
+			"src/Abstracts",
+			"src/Interfaces"
+		]
 	}
 }
