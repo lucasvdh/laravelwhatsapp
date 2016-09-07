@@ -3,7 +3,7 @@
 This is a Laravel wrapper for the [whatsapp/chat-api]() package
 
 ```
-$eventListener = new Lucasvdh/LaravelWhatsapp/Abstracts/Listener;
+$eventListener = new Lucasvdh/LaravelWhatsapp/Interfaces/Listener;
 $eventListener->setEventsToListenFor($events->activeEvents)
 ```
 

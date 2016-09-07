@@ -1,8 +1,9 @@
 <?php namespace Lucasvdh\LaravelWhatsapp\Abstracts;
 
 use WhatsProt;
+use Lucasvdh\LaravelWhatsapp\Interfaces\Listener as ListenerInterface;
 
-abstract class Listener
+abstract class Listener implements ListenerInterface
 {
 	protected $eventsToListenFor = [
 		'onClose',
