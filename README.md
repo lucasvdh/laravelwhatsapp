@@ -2,7 +2,7 @@ Work in progress
 
 # Laravel Whatsapp
 
-This is a Laravel wrapper for the [whatsapp/chat-api]() package
+This is a Laravel wrapper for the [whatsapp/chat-api](//github.com/mgp25/Chat-API) package
 
 ## Getting started
 1. [Include the package in your application](#include-the-package-in-your-application)
