@@ -25,7 +25,7 @@ class Whatsapp
 		// Create a instance of Registration class.
 		$registration = new Registration($username, $debug);
 
-		switch($type) {
+		switch ($type) {
 			case 'sms':
 				$registration->codeRequest('sms');
 				break;
@@ -54,21 +54,21 @@ class Whatsapp
 		// Convert to assoc array
 		$registration_result = json_decode(json_encode($registration_result), true);
 
-		if(!isset($registration_result['pw'])) {
-		throw new Exception('Registration was unsuccessful');
+		if (!isset($registration_result['pw'])) {
+			throw new Exception('Registration was unsuccessful');
+		}
+
+		return $registration_result;
 	}
 
-return $registration_result;
-}
-
-/**
- * @param $username
- * @param bool $debug
- */
-public function resetPassword($username, $debug = false)
-{
-	// Create a new Registration instance
-	$registration = new Registration($username, $debug);
+	/**
+	 * @param $username
+	 * @param bool $debug
+	 */
+	public function resetPassword($username, $debug = false)
+	{
+		// Create a new Registration instance
+		$registration = new Registration($username, $debug);
 		$registration->checkCredentials();
 	}
 

@@ -11,7 +11,7 @@ This is a Laravel wrapper for the [whatsapp/chat-api]() package
 4. [Registration](#registration)
 5. [Sending a message](#sending-a-message)
 
-## Include the package in your application
+## Include the package in your application <a id="include-the-package-in-your-application"></a>
 
 ``` bash
 composer require lucasvdh/laravelwhatsapp:dev-master
@@ -24,7 +24,7 @@ Or add a requirement to your project's composer.json
   },
 ```
 
-## Register the service provider and aliases
+## Register the service provider and aliases <a id="register-the-service-provider-and-aliases"></a>
 
 Edit the `config/app.php` file. Append the following to the `providers` array:
 
@@ -47,7 +47,7 @@ Register the aliases:
 ```
 
 
-## Create a listener
+## Create a listener <a id="create-a-listener"></a>
 
 ``` php
 <?php namespace App\Listeners;
@@ -60,7 +60,7 @@ class WhatsappEventListener extends WhatsappListener
 }
 ```
 
-## Registration
+## Registration <a id="registration"></a>
 
 The registration flow.
 
@@ -90,7 +90,7 @@ catch(Exception $e) {
 $password = $result['pw']
 ```
 
-## Connecting to the network
+## Connecting to the network <a id="connecting-to-the-network"></a>
 
 ``` php
 $phone_number = '31612345678' // Your phone number including country code
@@ -109,7 +109,7 @@ $connection = Whatsapp::connect($connection, $password, $listener);
 // You are now connected
 ```
 
-## Sending a message
+## Sending a message <a id="sending-a-message"></a>
 
 After connecting to the network you can send a message like this
 
@@ -120,7 +120,7 @@ $message = 'This is a message';
 $message_hash = $connection->sendMessage($target , $message);
 ```
 
-## Receiving messages
+## Receiving messages <a id="receiving-messages"></a>
 
 I recommend using Supervisor to run an artisan command in the background, but there are other ways 
 to solve this. I've written an example for receiving messages with an artisan command using Supervisor.
