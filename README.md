@@ -1,4 +1,5 @@
-Work in progress
+# Deprecated and not working
+The repo which this package relied on is no longer working, sorry. Hopefully whatsapp will bring out their business API soon. If so I'll implement the new API in this laravel package.
 
 # Laravel Whatsapp
 
